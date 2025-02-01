@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 60%;
+    height: auto;
+    margin: 3% auto 5%;
+    background-color: white;
+    padding: 19px;
+}
+
+.header {
+    height: 140px;
+    width: 100%;
+    border: none;
+}
+
+.headerInfo {
+    font-weight: 400;
+    padding: 20px;
+    background-color: #003566;
+    color: whitesmoke;
+    height: 100px;
+    width: 100%;
+}
+
+.headerInfo h5 {
+    margin-top: 3px;
+    font-weight: 200;
+}
+
+.headerSecInfo {
+    padding: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: #a8dadc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+}
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.mainContent section {
+    display: flex;
+    padding: 20px;
+}
+
+.education,
+.courcework,
+.language,
+.skillcontainer,
+.project {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.education h2,
+.courcework h2,
+.language h2,
+.skillcontainer h2,
+.project h2 {
+    color: #171a1a;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.educationContent,
+.courceWorks,
+.languages {
+    padding-top: 20px;
+}
+
+.languages li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.skill {
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.skill:hover {
+    background-color: #2C6A6A;
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.username {
+    font-family: 'Courier New', monospace;
+    color: #666;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 0.7rem;
+}
+
+.contact {
+    color: #444;
+    font-size: 0.7rem;
+}
+
+.github-link {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #054592;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+    .education, .courcework, .language, .skillcontainer, .project {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .education, .courcework, .language, .skillcontainer, .project {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerInfo, .headerSecInfo {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .profile-card {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}
